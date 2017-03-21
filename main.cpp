@@ -4,22 +4,22 @@ using namespace std;
 
 class A{
 public:
-	void A::publicprint();
+	void A::public_method();
 protected:
-	void A::protectedprint();
+	void A::protected_method();
 private:
-	void A::privateprint();
+	void A::private_method();
 };
 
-void A::publicprint(){
+void A::public_method(){
 	cout << "public" << endl;
 }
 
-void A::protectedprint(){
+void A::protected_method(){
 	cout << "protected" << endl;
 }
 
-void A::privateprint(){
+void A::private_method(){
 	cout << "private" << endl;
 }
 
@@ -40,20 +40,24 @@ int main(){
 	D d;
 
 	cout << "protected A: " << endl;
-	a.publicprint();
-	//a.protectedprint();
-	//a.privateprint();
+	a.public_method();
+	//a.protected_method();
+	//a.private_method();
+	
 	cout << "public B: " << endl;
-	b.publicprint();
-	//b.priveteprint();
-	//b.protectedprint();
+	b.public_method();
+	//b.privete_method();
+	//b.protected_method();
+	
 	cout << "protected C: " << endl;
-	//c.publicprint();
-	//c.privateprint();
-	//c.protectedprint();
+	//c.public_method();
+	//c.private_method();
+	//c.protected_method();
+	
 	cout << "private D: " << endl;
-	//d.publicprint();
-	//d.privateprint();
-	//d.protectedprint();
+	//d.public_method();
+	//d.private_method();
+	//d.protected_method();
+	
 	system("pause");
 }
